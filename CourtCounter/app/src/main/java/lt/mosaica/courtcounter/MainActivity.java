@@ -36,10 +36,17 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
+    public void resetScore(View v) {
+        scoreTeamA = 0;
+        displayForTeamA(scoreTeamA);
+        scoreTeamB = 0;
+        displayForTeamB(scoreTeamB);
+    }
+
     /**
      * A team buttons click.
      */
-    public void A_click_3(View v) {
+    public void A_click_3(View b) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
