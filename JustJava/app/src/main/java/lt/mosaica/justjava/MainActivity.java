@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.text.NumberFormat;
 
-public class MainActivity<displayPrice> extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     int quantity = 2;
 
