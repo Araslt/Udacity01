@@ -15,7 +15,7 @@ public class PhrasesActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<Word> phrases = new ArrayList<Word>();
-        phrases.add(new Word("Where are you going?", "minto wuksus?"));
+        phrases.add(new Word("Where are you going?", "minto wuksus?", R.drawable.number_one));
         phrases.add(new Word("What is your name?", "tinnә oyaase'nә?"));
         phrases.add(new Word("My name is...", "oyaaset..."));
         phrases.add(new Word("How are you feeling?", "michәksәs?"));
