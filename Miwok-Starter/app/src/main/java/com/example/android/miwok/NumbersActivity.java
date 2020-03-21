@@ -34,7 +34,7 @@ public class NumbersActivity extends AppCompatActivity {
         // Create an {@link WordAdapter}, whose data source is a list of
         // {@link Word}s. The adapter knows how to create list item views for each item
         // in the list.
-        WordAdapter adapter = new WordAdapter(this,  words);
+        WordAdapter adapter = new WordAdapter(this,  words, R.color.category_numbers);
 
         // Get a reference to the ListView, and attach the adapter to the listView
         ListView listView = (ListView) findViewById(R.id.list);
