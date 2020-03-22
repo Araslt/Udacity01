@@ -11,19 +11,21 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.song);
+        mediaPlayer = MediaPlayer.create(this, R.raw.song);
 
         Button button_play = findViewById(R.id.button_play);
         button_play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
+                Toast.makeText(MainActivity.this, "Play", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
              mediaPlayer.pause();
+                Toast.makeText(MainActivity.this, "Pause", Toast.LENGTH_SHORT).show();
             }
         });
     }
